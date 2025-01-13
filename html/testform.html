@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestForm</title>
+    <style>
+
+        form{
+            margin: 50px;
+            padding: 10px;
+            
+        }
+        input{
+            margin: 10px;
+        }
+        .submit{
+            background-color: rgb(85, 150, 247);    
+            color: white;        
+            padding: 10px;
+            width: 90px;
+            border-radius: 5px;
+            border-collapse: collapse;
+            border: none;
+        }
+        .submit:hover{
+            background-color:rgb(31, 119, 251) ;
+        }
+        .clear{
+            background-color: rgb(246, 95, 95);    
+            color: white;        
+            padding: 10px;
+            width: 90px;
+            border-radius: 5px;
+            border-collapse: collapse;
+            border: none;
+        }
+        .clear:hover{
+            background-color:rgb(251, 31, 35) ;
+        }
+     
+    </style>
+</head>
+<body>
+    <!-- <iframe src="/html/navbar.html" frameborder="0" title="Navbar" width="100%"></iframe> -->
+
+
+    <form action="" oninput="x.value=parseInt(a.value)">
+        <h1>Personal Details</h1>
+        <label for="fname"> First Name: </label>
+        <input type="text" id="fname" name="fname" placeholder="first-name" required><br>
+        <label for="lname"> Last Name: </label>
+        <input type="text" id="lname" name="lname" placeholder="last-name" required><br>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" placeholder="email" required><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password" required><br>
+
+        <label for="birthday">Date Of Birth</label>
+        <input type="date" name="birthday" id="birthday" max="2025-01-13"><br>
+
+        <label for="phone">Contact number: </label>
+        <input type="tel" name="phone" id="phone" placeholder="9662*****4" pattern="[0-9]{10}" required>
+
+        <h3>Gender : </h3>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label>
+
+        <h3>Tech Skills: </h3>
+
+        <input type="checkbox" name="skill1" id="skill1" value="c/c++">
+        <label for="skill1">C/C++</label>
+        <input type="checkbox" name="skill2" id="skill2" value="python">
+        <label for="skill2">Python</label>
+        <input type="checkbox" name="skill3" id="skill3" value="java">
+        <label for="skill3">Java</label>
+        <input type="checkbox" name="skill4" id="skill4" value="c#">
+        <label for="skill4">C#</label><br>
+        <input type="checkbox" name="skill5" id="skill5" value="html.css">
+        <label for="skill5">HTML/CSS</label>
+        <input type="checkbox" name="skill6" id="skill6" value="js">
+        <label for="skill6">JavaScript</label>
+        <input type="checkbox" name="skill7" id="skill7" value="ml">
+        <label for="skill7">MachineLearning</label><br><br>
+
+
+        <label for="college">Choose your college: </label>
+        <select name="college" id="college">
+            <option value="CSPIT">CSPIT</option>
+            <option value="DEPSTAR">DEPSTAR</option>
+            <option value="CMPICA">CMPICA</option>
+            <option value="RPCP">RPCP</option>
+        </select><br><br>
+
+        <h3>Hobbies: </h3>
+        <textarea name="hobbies" id="hobbies" rows="10" cols="40" ></textarea><br><br>
+
+        <span> Age: </span><span><output name="x" for="a"></output></span><br>
+        
+        0
+        <input type="range" id="a" name="a">
+        100
+        <br>
+
+        <label for="image">Upload your picture: </label>
+        <input type="file" name="image" id="image"><br>
+
+
+
+
+        <input type="reset" value="Clear" class="clear">
+        <input type="submit" value="submit" class="submit">
+
+
+
+
+    </form>
+    
+</body>
+</html>

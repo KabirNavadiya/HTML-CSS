@@ -6,16 +6,81 @@
     <link rel="icon" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/home.css">
     <title>Home</title>
+
+    <script>
+
+        function loadFrame(){
+            var iframe = document.getElementById("time-table");
+            iframe.style.display = 'block';
+            document.getElementById('time-table-text').style.display = "block";
+        }
+
+        function hideFrame(){
+            var iframe = document.getElementById("time-table");
+            iframe.style.display = 'none';
+            document.getElementById('time-table-text').style.display = "none";
+        }
+
+        function showVd(){
+            var vd =document.getElementById("vd");
+            vd.style.display='block';
+        }
+        function showYt(){
+            var yt = document.getElementById("yt");
+            yt.style.display='block';
+        }
+        function hideVd(){
+            var vd =document.getElementById("vd");
+            vd.style.display='none';
+        }
+        function hideYt(){
+            var yt = document.getElementById("yt");
+            yt.style.display='none';
+        }
+    </script>
+    <style>
+           body{
+            position: relative;
+            background-image: url("/images/favicon.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="/html/Home.html">Home</a></li>
-            <li><a href="/html/about.html">about</a></li>
-            <li><a href="/html/timetable.html" target="_blank">Time Table</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/html/Home.html">Home</a></li>
+                <li><a href="/html/about.html">About Me</a></li>
+                <li><a href="/html/timetable.html" target="_blank">Time Table</a></li>
+                <li><a href="/html/testform.html" target="_blank">TestForm</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <br>
+
+    <button onclick="loadFrame()">time table</button>
+
+    <button onclick="hideFrame()">hide</button>
+    <h2 id="time-table-text" style="display: none;">Time table loaded using iframe</h2>
+    <iframe src="/html/timetable.html" id="time-table" frameborder="0" style="border: 1px solid black; height: 500px; display: none;" title="timetable" height="100%" width="100%%" ></iframe>
+
+
+    <br><br>
+    <button onclick="showVd()">Play Video</button>
+    <button onclick="hideVd()">hide Video</button><br>
+    <video id="vd"  width="500" height="300" controls style="display: none;">
+        <source src="/videos/space shooter.mp4" type="video/mp4">
+    </video><br>
     
 
+    <button onclick="showYt()" >youtube video</button>
+    <button onclick="hideYt()" >hide youtube video</button><br>
+    <iframe style="display: none;" id="yt" width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+    </iframe>
 </body>
 </html>

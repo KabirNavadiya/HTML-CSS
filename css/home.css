@@ -23,3 +23,14 @@
     color: #fff;
     transition: color 0.3s;
 }
+
+button{
+    padding: 5px;
+    background-color: rgb(54, 143, 244);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(9, 78, 253);
+}
