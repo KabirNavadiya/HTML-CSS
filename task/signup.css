@@ -38,9 +38,10 @@ body{
 .inputs{
     width: 100%;
     padding: 15px;
+    padding-left: 40px;
     border-radius: 15px;
     border-style: none;
-    max-width: 300px;
+    max-width: 400px;
     margin: 10px 0;
     background-color: rgb(255, 255, 255) ;
     font-weight: 200;
@@ -113,8 +114,8 @@ h1{
 }
 
 .profile {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,4 +127,17 @@ h1{
 }
 i{
     opacity: 0.411;
+}
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+.icons{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
 }
