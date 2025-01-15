@@ -1,359 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table</title>
-</head>
-<style>
-    table{
-        width: 100%;
-    }
-    table,th, td, tr{
-        border: 1px solid black;
-        border-collapse: collapse;
-        height: 100%;
-        text-align: center;
-    }
-    th{
-        padding: 20px;   
 
-    }
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
 
-</style>
-
-<body>
-    <table >
-        <tr>
-            <th>HRS</th>
-            <th>MON</th>
-            <th>TUE</th>
-            <th>WED</th>
-            <th>THU</th>
-            <th>FRI</th>
-            <th>SAT</th>
-        </tr>
-        <tr>
-            <td>9:10 to 10:10</td>
-            <td>
-                <p>
-                    CC 
-                    <hr>
-                    AJS
-                    <hr>
-                    624
-                </p>
-            </td>
-            <td>
-                <p>
-                    BDA 
-                    <hr>
-                    PSP
-                    <hr>
-                    622
-                </p>
-            </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                            NLP 
-                            <hr>
-                            DAB
-                            <hr>
-                            618A
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            IOT 
-                            <hr>
-                            AYT
-                            <hr>
-                            618B
-                        </p>
-                    </td>
-                </table>
-            </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                            CC 
-                            <hr>
-                            AJS
-                            <hr>
-                            617A
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            SGP 
-                            <hr>
-                            RNP
-                            <hr>
-                            617B
-                        </p>
-                </table>
-            </td>
-            <td>project / assignment</td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                             
-
-                            
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-
-                  
-                        </p>
-                </table>
-            </td>
-        </tr>
+        table {
+            width: 100%;
+            margin: auto;
+            table-layout: fixed;
+        }
 
         
+        
+    </style>
+</head>
+<body>
+
+    <!-- <iframe src="/html/testform.html" frameborder="2" title="Navbar" width="100%"></iframe>
+    <p>show html page into another using iframe</p> -->
+
+    <table style="width: 100%; margin: auto; table-layout: fixed;">
         <tr>
-            <td>10:10 to 11:10</td>
-            <td>
-                <p>
-                    DLP 
-                    <hr>
-                    DAB
-                    <hr>
-                    624
-                </p>
-            </td>
-            <td>
-                <p>
-                    CC 
-                    <hr>
-                    AJS
-                    <hr>
-                    622
-                </p>
-            </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                            EH 
-                            <hr>
-                            MKP/KJM
-                            <hr>
-                            628B
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            EH 
-                            <hr>
-                            MCD/SAP
-                            <hr>
-                            628B
-                        </p>
-                    </td>
-                </table>
-            </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                            BDA
-                            <hr>
-                            DRK
-                            <hr>
-                            616A
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            DLP 
-                            <hr>
-                            TRP
-                            <hr>
-                            616B
-                        </p>
-                </table>
-            </td>
-            <td> </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                             
+            <th>HRS</th>
+            <th colspan="2">MON</th>
+            <th colspan="2">TUE</th>
+            <th colspan="2">WED</th>
+            <th colspan="2">THU</th>
+            <th colspan="2">FRI</th>
+            <th colspan="2">SAT</th>
+        </tr>
+        <tr>
+            <td >9:10 to 10:10</td>
+            <td colspan="2">CC <br><hr> AJS <br><hr> 624</td>
+            <td colspan="2">BDA <br><hr> PSP <br><hr> 622</td>
+            <td >NLP <br><hr> DAB <br><hr>618A</td>
+            <td >IOT <br><hr> AYT <br><hr> 618B</td>
+            <td >CC <br><hr> AJS <br><hr> 617A</td>
+            <td >SGP <br><hr> RNP <br><hr> 617B</td>
+            <td colspan="2" >Project / Assignment</td>
+            <td ></td>
+            <td ></td>
+        </tr>
 
-                            
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-
-                  
-                        </p>
-                </table>
-            </td>
+        <tr>
+            <td >10:10 to 11:10</td>
+            <td colspan="2">DLP <br><hr> DAB <br><hr> 624</td>
+            <td colspan="2">CC <br><hr> AJS <br><hr> 622</td>
+            <td >EH <br><hr> MKP/KJM <br><hr>628B</td>
+            <td >EH <br><hr> MCD/SAP <br><hr> 628B</td>
+            <td >BDA <br><hr> DRK <br><hr> 616A</td>
+            <td >DLP <br><hr> TRP <br><hr> 616B</td>
+            <td colspan="2"></td>
+            <td ></td>
+            <td ></td>
         </tr>
         <tr>
             <td>11:10 to 12:10</td>
-            <td colspan="6" style="padding: 20px;"> BREAK</td>
+            <td colspan="12" style="background-color: gray;" > <br> BREAK <br> <br></td>
+        </tr>
+
+       <tr>
+            <td >12:10 to 1:10</td>
+            <td colspan="2">BDA <br><hr> APC <br><hr> 622</td>
+            <td colspan="2">CC <br><hr> RRP <br><hr> 624</td>
+            <td colspan="2">BDA <br><hr> APC <br><hr>621</td>
+            <!-- <td >EH <br><hr> MCD/SAP <br><hr> 628B</td> -->
+            <td >SGP <br><hr> MJP <br><hr> 617B</td>
+            <td >BDA <br><hr> APC <br><hr> 616B</td>
+            <td colspan="2">Project / Assignment</td>
+            <td ></td>
+            <td ></td>
         </tr>
         <tr>
-            <td>12:10 to 1:10</td>
-            <td>
-                <p>
-                    BDA 
-                    <hr>
-                    APC
-                    <hr>
-                    622
-                </p>
-            </td>
-            <td>
-                <p>
-                    CC
-                    <hr>
-                    RRP
-                    <hr>
-                    624
-                </p>
-            </td>
-            <td>
-                <p>
-                    BDA
-                    <hr>
-                    APC
-                    <hr>
-                    621
-                </p>
-            </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                            SGP
-                            <hr>
-                            MJP
-                            <hr>
-                            617B
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            BDA 
-                            <hr>
-                            APC
-                            <hr>
-                            616B
-                        </p>
-                </table>
-            </td>
-            <td>project / assignment</td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                             
+            <td >1:10 to 2:10</td>
+            <td colspan="2">DLP <br><hr> TRP <br><hr> 622</td>
+            <td colspan="2">DLP <br><hr> TRP <br><hr> 624</td>
+            <td colspan="2">DLP <br><hr> DAB <br><hr>621</td>
+            <!-- <td >EH <br><hr> MCD/SAP <br><hr> 628B</td> -->
+            <td >DLP <br><hr> SST <br><hr> 616A</td>
+            <td >CC <br><hr> RRP <br><hr> 617A</td>
+            <td colspan="2">NLP/IOT/EH <br><hr> DRK/AYT/MKP <br><hr>622/624/623</td>
+            <td ></td>
+            <td ></td>
+        </tr>
 
-                            
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-
-                  
-                        </p>
-                </table>
-            </td>
+        <tr>
+            <td>2:10 to 2:20</td>
+            <td colspan="12" style="background-color: gray;"> <br> BREAK <br> <br></td>
         </tr>
         <tr>
-            <td>1:10 to 2:10</td>
-            <td>
-                <p>
-                    DLP 
-                    <hr>
-                    TRP
-                    <hr>
-                    622
-                </p>
-            </td>
-            <td>
-                <p>
-                    DLP
-                    <hr>
-                    TRP
-                    <hr>
-                    624
-                </p>
-            </td>
-            <td>
-                <p>
-                    DLP
-                    <hr>
-                    DAB
-                    <hr>
-                    621
-                </p>
-            </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                            DLP
-                            <hr>
-                            SST
-                            <hr>
-                            616B
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            CC 
-                            <hr>
-                            RRP
-                            <hr>
-                            617A
-                        </p>
-                </table>
-            </td>
-            <td>
-                <p>
-                    NLP/OT/EH
-                    <hr>
-                    DRK/AYT/MKP
-                    <hr>
-                    622/624/623
-                </p>
-            </td>
-            <td>
-                <table >
-                    <td>
-                        <p>
-                             
-
-                            
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-
-                  
-                        </p>
-                </table>
-            </td>
-
+            <td >2:20 to 3:20</td>
+            <td >SGP <br><hr> MCD <br><hr> 623</td>
+            <td >SGP <br><hr> MLR <br><hr> 623</td>
+            <td >BDA <br><hr> PSP <br><hr> 616A</td>
+            <td >DLP <br><hr> DAB <br><hr> 616B</td>
+            <td colspan="2">IOT <br><hr> AYT <br><hr>624</td>
+            <!-- <td >EH <br><hr> MCD/SAP <br><hr> 628B</td> -->
+            <td colspan="2">NLP/EH <br><hr> DAB/MKP <br><hr> 624/623</td>
+            <td >DLP <br><hr> DAB <br><hr> 616A</td>
+            <td >CC <br><hr> RRP <br><hr> 617A</td>
+            <td >A</td>
+            <td >B</td>
         </tr>
+
         <tr>
-            <td> 2:10 to 4:10</td>
-            <td colspan="6" style="padding: 20px;"> FREE TIME</td>
-
-
+            <td >3:20 to 4:20</td>
+            <td >SGP <br><hr> MKP <br><hr> 624</td>
+            <td >SGP <br><hr> SST <br><hr> 624</td>
+            <td >CC <br><hr> AJS <br><hr> 617A</td>
+            <td >SGP <br><hr> VHK <br><hr> 617B</td>
+            <td colspan="2">IOT <br><hr> AYT <br><hr>624</td>
+            <!-- <td >EH <br><hr> MCD/SAP <br><hr> 628B</td> -->
+            <td colspan="2">NLP/EH <br><hr> ABM/JKM <br><hr> 624/623</td>
+            <td >SJP <br><hr> KJM <br><hr> 617B</td>
+            <td >BDA <br><hr> PSP <br><hr> 616B</td>
+            <td >A</td>
+            <td >B</td>
         </tr>
+       
     </table>
 </body>
-
 </html>
