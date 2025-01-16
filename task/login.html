@@ -10,12 +10,14 @@
 <body>
     <div class="login-box">
 
-<!-- input buttons to navigate -->
+        
 
                 <form action="" class="login-form">
-                    <h1>Login</h1>
-
-
+                    <div class="switch-page">
+                        <a href="#" class="btn" id="signin"><i class="fa-solid fa-user" style="margin: 0 10px;"></i>Login</a>
+                        <a href="/task/signup.html" class="btn" id="signup"><i class="fa-solid fa-user-plus" style="margin: 0 5px;"></i>Signup</a>
+                    </div>
+                    <!-- <h1>Login</h1> -->
                     <div class="inputs">
                         <input type="text" id="username" name="username" placeholder="username" required>
                     </div>
@@ -34,7 +36,7 @@
                     
                     <button > Login</button>
                     <div class="footer">
-                        Not a user ? <a href="/task/signup.html" style="text-decoration: none;"> Sign Up</a>
+                        Not a user ? <a href="/task/signup.html" class="transition-link" style="text-decoration: none;"> Sign Up</a>
                     </div>
 
                 </form>
