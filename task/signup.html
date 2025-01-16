@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="/task/signup.css">
 
+
+    <script>
+        function showPreview(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    const preview = document.getElementById('profile-preview');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+
+        reader.readAsDataURL(file);
+        
+        }
+    }
+
+    </script>
 </head>
 <body>
     <div class="signup-box">
@@ -16,14 +35,14 @@
                     <a href="#" class="btn" id="signup"><i class="fa-solid fa-user-plus" style="margin: 0 5px;"></i>Signup</a>
                 </div>
                     <!-- <h1>Sign Up</h1> -->
-
                     <div class="profile-container">
-                        <input id="profile" type="file" name="profilepic" style="display: none;" >
+                        <input id="profile" type="file" name="profilepic" style="display: none;" accept="image/*" onchange="showPreview(event)">
                         <label class="profile" for="profile">
                             <i class="fa-solid fa-plus"></i>
                         </label>
-                        
+                        <img id="profile-preview" class="profile-preview" style="display: none;" />
                     </div>
+                    
 
                     <div class="input-container">
                         <i class="fa-solid fa-envelope icons"></i>

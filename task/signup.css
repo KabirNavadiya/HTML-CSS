@@ -95,8 +95,41 @@ h1{
     justify-content: center;
     padding: 5px;
 }
-
 .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    background-color: #f4f4f9;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-preview {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+
+
+/* .profile-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +148,7 @@ h1{
     padding: 10px;
     border: 2px solid rgba(0, 0, 0, 0.411);
     background-color: #f4f4f9;
-}
+} */
 i{
     opacity: 0.411;
 }
@@ -207,4 +240,29 @@ body {
     to {
         opacity: 1;
     }
+}
+#email:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}   
+#username:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}   
+#password:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
+
+#confirm-password:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
+#contact:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
+#dob:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
 }

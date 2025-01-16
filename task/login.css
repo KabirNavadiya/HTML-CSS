@@ -194,3 +194,11 @@ body {
         opacity: 1;
     }
 }
+#username:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}   
+#password:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
