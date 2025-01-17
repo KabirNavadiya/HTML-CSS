@@ -2,7 +2,7 @@
     display: grid;
     background-color: lightskyblue;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    padding: 10px;
+    padding: 20px 30px 20px 30px;
     gap: 10px;
 }
 .grid-container > div {
