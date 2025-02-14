@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 0;
+    background-image: url("/task/gradient.avif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.signup-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.432);
+    height: 600px; /*added*/
+    width: 600px; /*added*/
+    margin: auto;
+    border-radius: 10px;
+    padding: 100px; /*change*/
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.1);
+
+}
+.signup-form{
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 40px; */
+
+}
+.inputs{
+    width: 100%;
+    /* padding-left: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+.inputs input{
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 5px 0;
+    background-color: rgb(255, 255, 255);
+    font-weight: 200;
+    opacity: 0.5;
+} 
+.checkbox{
+    display: flex;
+    justify-content: left;
+    /* margin-top: 50px; */
+}
+.checkbox label{
+    padding-left: 5px;
+}
+button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #ac1dee;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #6a1492;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Lucida Sans';
+    color: #ac1dee;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    background-color: #f4f4f9;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-preview {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+
+
+/* .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.profile {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    background-color: #f4f4f9;
+} */
+i{
+    opacity: 0.411;
+}
+.input-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 400px; */
+    /* margin: 10px 0; */
+}
+.icons{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+/*transition practise*/
+.switch-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Lucida Sans';
+    color: #ac1dee;
+}
+.switch-page input{
+    padding: 10px;
+    display: inline-block;
+    border: 5px solid black;
+}
+.btn{
+    margin: 0 10px;
+    color: white;
+    background-color: #ac1dee;
+    padding:15px;
+    width:max-content;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+#signin:hover{
+    background-color: #6a1492;
+    transition: width 4s ease-in-out;
+    width: 250px;
+}
+#signup:hover{
+    background-color: #6a1492;
+  
+}
+
+/*move left and right */ 
+
+/* #signin{
+    background-color: dark;
+    position:relative;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: example1;
+}
+@keyframes example1 {
+    0%{left:0px ; top:0px}
+    25%{left:-20px;top:0px}
+    50%{left:-40px;top:0px}
+    100%{left:0px;top:0px}    
+}
+#signup{
+    background-color: dark;
+    position:relative;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: example;
+}
+
+@keyframes example {
+    0%{left:0px ; top:0px}
+    25%{left:20px;top:0px}
+    50%{left:40px;top:0px}
+    100%{left:0px;top:0px}    
+} */
+body {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+#email:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}   
+#username:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}   
+#password:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
+
+#confirm-password:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
+#contact:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
+#dob:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}

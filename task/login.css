@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*change*/
+    margin: 0 0; /*change*/
+    background-image: url("/task/gradient.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.432);
+    height: 500px; /*added*/
+    width: 500px; /*added*/
+    margin: auto;
+    border-radius: 10px;
+    padding: 100px; /*change*/
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.1);
+    /* width: 100%;
+    max-width: 500px;
+    text-align: center; */
+}
+
+.inputs input{
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255);
+    font-weight: 200;
+    opacity: 0.5;
+} 
+
+.inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login-form{
+    display: flex;
+    gap: 26px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.fp{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin: 0;
+}
+
+.checkbox{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin: 50px 0 0 0;
+}
+.checkbox label{
+    padding-left: 5px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* #username,#password{
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255);
+    font-weight: 200;
+    opacity: 0.5;
+} */
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%; 
+    border-radius: 10px;
+    background-color: #ac1dee; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #6a1492;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Lucida Sans';
+    color: #ac1dee;
+    
+}
+
+/*transition practise*/
+.switch-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Lucida Sans';
+    color: #ac1dee;
+}
+.switch-page input{
+    padding: 10px;
+    display: inline-block;
+    border: 5px solid black;
+}
+.btn{
+    margin: 0 10px;
+    color: white;
+    background-color: #ac1dee;
+    padding:15px;
+    width:max-content;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+#signin:hover{
+    background-color: #6a1492;
+}
+#signup:hover{
+    background-color: #6a1492;
+    transition: width 4s ease-in-out;
+    width: 250px;
+}
+
+/*move left and right */ 
+
+
+/* #signin{
+    background-color: dark;
+    position:relative;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: example1;
+}
+@keyframes example1 {
+    0%{left:0px ; top:0px}
+    25%{left:-20px;top:0px}
+    50%{left:-40px;top:0px}
+    100%{left:0px;top:0px}    
+}
+#signup{
+    background-color: dark;
+    position:relative;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: example;
+}
+
+@keyframes example {
+    0%{left:0px ; top:0px}
+    25%{left:20px;top:0px}
+    50%{left:40px;top:0px}
+    100%{left:0px;top:0px}    
+} */
+
+body {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+#username:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}   
+#password:focus{
+    transform: scale(1.05,1.2);
+    opacity: 1;
+}
